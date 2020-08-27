@@ -8,8 +8,12 @@ import Course from './components/Course/Course';
 function App() {
   return (
     <div className="main-container">
-        <Navigation></Navigation>
-        <Course></Course>
+
+      {/* Create navbar using Bootstrap */}
+      <Navigation></Navigation>
+      
+      {/* Calling Course component without using bootstrap */}
+      <Course></Course>
         
         
     </div>

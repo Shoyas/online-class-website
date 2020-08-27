@@ -24,15 +24,20 @@ const Course = () => {
             <div className="course-side">
                 <h3>{courses.length} Courses are available now</h3>
                 {
+                    // Here CourseProduct is the child component of Course component
+
                     courses.map( course => <CourseProduct 
                     handleAddCourse = {handleAddCourse}
-
+                    key={course.id}
                     courseProduct ={course}>
 
                     </CourseProduct> )
                 }
             </div>
             <div className="course-cart">
+
+                {/* Cart is the child component of Course component */}
+
                 <Cart cart={cart}></Cart>
             </div>
         </div>

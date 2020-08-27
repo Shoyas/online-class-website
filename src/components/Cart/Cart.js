@@ -1,16 +1,16 @@
 import React from 'react';
 
 const Cart = (props) => {
+    
     const cart = props.cart;
-    console.log(cart);
 
+    // Computing total Price
     
     let total = 0;
     for(let i = 0; i < cart.length; i++){
         const product = cart[i];
         total = total + product.price;
-
-        console.log(total);
+    
     }
 
     return (
@@ -23,7 +23,11 @@ const Cart = (props) => {
             <div className="order-detail">
                 <ol>
                     {
-                        cart.map( ct => <li>{ct.name}</li> )
+                        // Showing enrolled details in the cart side with ascending order by selecting items 
+                        cart.map( ct => 
+                            <li key={ct.id}>
+                                {ct.name}
+                            </li> )
                     }
                 </ol>
             </div>

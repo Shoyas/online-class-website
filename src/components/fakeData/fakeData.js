@@ -48,7 +48,7 @@ var courses = [
         "name": "Php with practice project",
         "image": "https://iili.io/dr2J8g.jpg",
         "instructor": "Jhanker Mahbub. [Sr. Web Developer at The Nielsen Company]",
-        "description": "This is one of the most popular programming language for web-development. 40% developer choose this language and job available for regarding language",
+        "description": "This is one of the most popular programming language for web-development. 40% developer choose this language and job available regarding this language",
         "company": "Programming-Hero",
         "email": "programing-hero1@gmail.com",
         "price": 18,
